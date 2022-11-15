@@ -5,13 +5,18 @@
 @section('content')
     @include('layout.navbar')
 
-    <div class="d-flex justify-content-around" style="margin-top: 80px" >
-    @for($i = 0; $i < count($skin); $i++)
+    <style>
+        body{
+            background-color: slateblue;
+        }
+    </style>
+    <div class="d-flex justify-content-around" style="margin-top: 210px" >
+    @for($i = 0; $i < count($skinname); $i++)
     <div class="card" style="width: 25rem;" >
-        <img class="card-img-top" src={{$img[$i]}} alt="Card image cap">
+        <img class="card-img-top" src={{$image[$i]}} alt="Card image cap">
 
         <div class="card-body" style="background: lavender">
-            <h4 class="card-text">{{$skin[$i]}}</h4>
+            <h4 class="card-text">{{$skinname[$i]}}</h4>
             <p>Price: {{$price[$i]}}</p>
             @if($price[$i] == "Rp 175.000")
             <div class="alert alert-success d-inline-bock" style="text-align:center">
@@ -31,4 +36,9 @@
     </div>
     @endfor
     </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 @endsection
